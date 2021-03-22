@@ -31,26 +31,32 @@
             y = parseInt(prompt('Informe um um número inteiro diferente do anterior'))
         } while(isNaN(y) || y === x)
 
+        let maior
+            if (x > y){
+                maior = x
+            }
+                else {
+                    maior = y
+                }
+
+        let menor
+            if (y < x){
+                menor = y
+            }
+                else {
+                    menor = x
+                }   
         
-        if (x > y){
-        x = maior
-        y = menor
-        }
-            else{
-            x = menor
-            y = maior
+        let r = 0
+            for(let i = menor; i <= maior; i++)   {
+                r = r + i 
             }
 
-        let r = menor
-            for(let i = menor; i > maior; i++){
-            r += i
-            }
-        document.write("O A soma do números do intervalo informado é " + r)
-           
-        
+        document.write("A soma do números do intervalo informado é " + r)
+            
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>
